@@ -1,0 +1,94 @@
+/*
+Theme Name: eGadget
+Theme URI: 
+Author: Klaudia Wasilewska & Piotr Kuźnik
+Description: eGadget to motyw napisany specjalnie do konkurs Gażdzety współczesnej młodzieży 
+Version: 1.0
+*/
+
+/*******************************************************************************/
+
+#warpper{
+	font-family: 'McLaren', sans-serif;
+	min-height: 100vh;
+	width: 100vw;
+	margin: 0;
+	padding: 0;
+	background-color: #FFF;
+}
+#login_row{
+	height: 5vh;
+	background-color: #FFF;
+	font-size: 3vh;
+	margin-bottom: 5px;
+
+}
+.middle{
+	display:table-cell;
+	vertical-align:middle;
+	height: 5vh;
+}
+.left{
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+.right{
+	float: right;
+}
+.btn_m{
+	height: 4vh !important;
+	font-size: 100%;
+	display:table-cell;
+	vertical-align:middle;
+	padding: 0 5px;
+	margin-right: 5px;
+}
+h1{
+	font-size: 15vh;
+	display: block;
+	color: white;
+}
+#image_row{
+	height: 50vh;
+	background-image: url('./image/start_page.jpg');
+	background-position: bottom;
+	background-size: auto;
+	background-repeat: no-repeat;
+}
+.seperator{
+    height: 100%;
+    border-left-style: solid;
+    border-left-width: 2px;
+    width: 1px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-color: #337ab7;
+}
+.absolute{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+	margin-bottom: 5px;
+}
+.radio{
+	margin-left: 15%;
+}
+
+@media (max-width:767px) {
+    /*HERE PUT YOUR CODE FOR XS */
+}
+
+@media (min-width:768px) {
+    /*HERE PUT YOUR CODE FOR SM */
+}
+
+@media (min-width:992px)  { 
+    /*HERE PUT YOUR CODE FOR  MD */
+}
+
+@media (min-width:1200px) { 
+    /*HERE PUT YOUR CODE FOR  LG */
+}
