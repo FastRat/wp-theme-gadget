@@ -24,8 +24,8 @@ Version: 1.0
 
 }
 .middle{
-	display:table-cell;
-	vertical-align:middle;
+	display: table-cell;
+	vertical-align: middle;
 	height: 5vh;
 }
 .left{
@@ -43,11 +43,6 @@ Version: 1.0
 	vertical-align:middle;
 	padding: 0 5px;
 	margin-right: 5px;
-}
-h1{
-	font-size: 15vh;
-	display: block;
-	color: white;
 }
 #image_row{
 	height: 50vh;
@@ -69,26 +64,97 @@ h1{
 	margin: 0;
 	padding: 0;
 }
-li{
-	list-style: none;
+.li_kategory{
+	list-style: url('./image/arrow.png');
 	margin-bottom: 5px;
 }
 .radio{
 	margin-left: 15%;
 }
+.article_text{
+	text-align: justify;
+}
+#fotter{
+	height: 5vh;
+	border-top: 1px solid #eee;
+
+}
+.fotter_text{
+	display: table-cell;
+	vertical-align: middle;
+	height: 5vh;
+}
+.hr{
+	margin: 0;
+	padding: 0;
+}
 
 @media (max-width:767px) {
     /*HERE PUT YOUR CODE FOR XS */
+    .h1_titleWeb{
+		font-size: 45px;
+		margin-top: 30px;
+		display: block;
+		color: white;
+	}
+	#image_row{
+		background-image: url('./image/start_page4.jpg');
+		background-position: bottom;
+	}
+	.article_title{
+		font-size: 25px;
+	}
+	.article_date{
+		font-size: 20px;
+	}
 }
 
 @media (min-width:768px) {
     /*HERE PUT YOUR CODE FOR SM */
+    .h1_titleWeb{
+		font-size: 60px;
+		margin-top: 30px;
+		display: block;
+		color: white;
+	}
+	#image_row{
+		background-position: 96% 96%;
+	}
+	.article_title{
+		font-size: 35px;
+	}
+	.article_date{
+		font-size: 25px;
+	}
+	.navbar .control{
+		width: 130px !important;
+	}
+	.vote_button{
+		font-size: 12px;
+		padding: 10px;
+	}
+	.result_button{
+		font-size: 10px;
+		padding: 7px;
+	}
+
 }
 
 @media (min-width:992px)  { 
     /*HERE PUT YOUR CODE FOR  MD */
+    .vote_button{
+		font-size: 18px;
+		padding: 10px;
+	}
+	.result_button{
+		font-size: 12px;
+		padding: 7px;
+	}
 }
 
 @media (min-width:1200px) { 
     /*HERE PUT YOUR CODE FOR  LG */
+    .navbar .control{
+		width: 100% !important;
+	}
 }
