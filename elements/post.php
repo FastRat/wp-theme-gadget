@@ -34,10 +34,8 @@
                 Autor: <?php the_author(); ?>
                 <span class="seperator"></span>
                 Kategoria: <?php the_category(', '); ?>
-                <?php if (function_exists(the_tags())) {
-                    echo '<br><span class="seperator"></span>';
-                    the_tags();
-                } ?>
+                <span class="seperator"></span>
+                <?php the_tags(); ?>
             </h6>
         </div>
     </div>

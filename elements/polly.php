@@ -4,7 +4,7 @@
     <div class="radio">    
         <label>
             <input type="radio" name="quest" value="opt" />
-            Smartphone?
+            Smartphone
         </label>
     </div>   
     <div class="radio">    
