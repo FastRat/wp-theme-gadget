@@ -77,12 +77,15 @@ Version: 1.0
 #fotter{
 	height: 5vh;
 	border-top: 1px solid #eee;
-
 }
 .fotter_text{
+	display: table;
+	height: 5vh;
+}
+#copyright, #author{
 	display: table-cell;
 	vertical-align: middle;
-	height: 5vh;
+	font-size: 1.7vh;
 }
 .hr{
 	margin: 0;
