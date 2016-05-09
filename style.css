@@ -95,6 +95,9 @@ Version: 1.0
 	float: left;
 	margin: 0.5em 1em 0.5em 0;
 }
+.article_text{
+	text-indent: 30px;
+}
 
 @media (max-width:767px) {
     /*HERE PUT YOUR CODE FOR XS */
