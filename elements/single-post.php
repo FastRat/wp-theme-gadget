@@ -1,7 +1,14 @@
 <div id="post-<?php the_ID(); ?>" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
     <div class="row">
         <div class="col-xs-offset-1 col-sm-offset-1 col-md-offset-2 col-lg-offset-2 col-xs-1 col-sm-1 col-md-1 col-lg-1">
-            <h3 class="article_date"> <?php the_date(); ?> </h3>
+            <h3 class="article_date"> <?php 
+                ob_start();
+                the_date();
+                $date_post = getDateWithRoma(ob_get_contents()); 
+                ob_end_clean();
+                
+                echo $date_post;
+            ?> </h3>
         </div>
         <div class="col-xs-offset-2 col-md-offset-1 col-xs-7 col-sm-4 col-md-8 col-lg-8">
             <h1>

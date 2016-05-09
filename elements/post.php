@@ -2,7 +2,7 @@
     ob_start();
     if ( isset($data_post) ) {
         the_date();
-        $data_tmp = ob_get_contents();
+        $data_tmp = getDateWithRoma(ob_get_contents());
         
         if ( empty($data_tmp)==FALSE && $data_tmp !=='' && is_null($data_tmp)==FALSE){
             $data_post = $data_tmp;
@@ -10,7 +10,7 @@
         
     } else {
          the_date();
-        $data_post = ob_get_contents();
+        $data_post = getDateWithRoma(ob_get_contents());
     }
     ob_end_clean();
 ?>
