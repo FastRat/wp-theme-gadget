@@ -48,7 +48,7 @@ Version: 1.0
 	height: 50vh;
 	background-image: url('./image/start_page.jpg');
 	background-position: bottom;
-	background-size: auto;
+	background-size: cover;
 	background-repeat: no-repeat;
 }
 .seperator{
