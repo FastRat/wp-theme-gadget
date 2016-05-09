@@ -21,10 +21,12 @@
                 </div>
                 <div id="image_row" class="row">
                     <div class="col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 col-xs-11 col-sm-11 col-md-11 col-lg-11">
-                        <h1 class="left h1_titleWeb">
-                            <?php bloginfo('name'); ?>
-                            <!--<small><?php bloginfo('description'); ?></small>-->
-                        </h1>
+                        <a href="<?php bloginfo('url'); ?>">
+                            <h1 class="left h1_titleWeb">
+                                <?php bloginfo('name'); ?>
+                                <!--<small><?php bloginfo('description'); ?></small>-->
+                            </h1>
+                        </a>
                     </div>
                 </div>
                 <div class="row">
