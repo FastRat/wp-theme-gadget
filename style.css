@@ -91,6 +91,9 @@ Version: 1.0
 	margin: 0;
 	padding: 0;
 }
+.alignleft{
+	float: left;
+}
 
 @media (max-width:767px) {
     /*HERE PUT YOUR CODE FOR XS */

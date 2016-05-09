@@ -1,28 +1,28 @@
 <div id="Poll" ng-include src="result" ></div>
 <form ng-controller="Poll" ng-hide="result">
-    <h4>Example quest?</h4>
+    <h4>Z jakiego gadżetu najczęściej korzystasz?</h4>
     <div class="radio">    
         <label>
             <input type="radio" name="quest" value="opt" />
-            Option
+            Smartphone?
         </label>
     </div>   
     <div class="radio">    
         <label>
             <input type="radio" name="quest" value="opt" />
-            Option
+            Tablet
         </label>
     </div> 
     <div class="radio">    
         <label>
             <input type="radio" name="quest" value="opt" />
-            Option
+            Smartwatch
         </label>
     </div> 
     <div class="radio">    
         <label>
             <input type="radio" name="quest" value="opt" />
-            Option
+            MP4
         </label>
     </div>  
     <div class="form-group">
