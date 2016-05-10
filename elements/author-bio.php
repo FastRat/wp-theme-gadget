@@ -16,10 +16,10 @@
             
             if ( empty( $url ) ) {
                 
-                $data = json_decode(file_get_contents('./wp-content/plugin/wp-profile/data.txt'), true);
+                $data = unserialize(file_get_contents('./wp-content/plugin/wp-profile/data.txt'));
                 
                 if ( isset($data[$id])) {
-                    echo "<img src=\"{$data[$id]}\" />";
+                     echo '<img src="' . ($data[$id]) . '" />'; 
                 }
                 
                 echo get_avatar(get_the_author_meta('user_mail') );
