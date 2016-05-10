@@ -18,13 +18,13 @@
             if (is_single() ) {
                 require __DIR__ . '/single-post.php';
                 
-                $next = 'Następny';
-                $previous = 'Poprzedni';
+                $next = 'Następny artykuł';
+                $previous = 'Poprzedni artykuł';
             } else {
                 require __DIR__ . '/post.php';
                 
-                $next = 'Następna';
-                $previous = 'Poprzedna';
+                $next = 'Następna strona';
+                $previous = 'Poprzedna strona';
             }
             
     // End the loop.
