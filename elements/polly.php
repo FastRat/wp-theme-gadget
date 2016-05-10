@@ -27,7 +27,7 @@
     </div>  
     <div class="form-group">
         <input type="submit" class="btn btn-success btn-lg" value="Głosuj" />
-        <input type="button" class="btn btn-default" value="Wyniki" ng-click="result=location.href + 'section/poll_result.html'" />
+        
     </div>
 
 </form>
