@@ -6,7 +6,10 @@
 <div class="row">
     <div class="col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2 col-xs-2 col-sm-2 col-md-2 col-lg-2">
         <?php
-            $id = get_current_user_id();
+            ob_start();
+            the_author_ID();
+            $id = ob_get_contents();
+            ob_end_clean();
             global $wpdb;
             $prefix = $wpdb->prefix;
 
@@ -16,13 +19,13 @@
             
             if ( empty( $url ) ) {
                 
-                $data = unserialize(file_get_contents('./wp-content/plugin/wp-profile/data.txt'));
+                $data = @unserialize(@file_get_contents(__DIR__ . '/../../../plugins/wp-profile/data.txt'));
                 
                 if ( isset($data[$id])) {
                      echo '<img src="' . ($data[$id]) . '" />'; 
+                } else {                
+                    echo get_avatar(get_the_author_meta('user_mail') );
                 }
-                
-                echo get_avatar(get_the_author_meta('user_mail') );
              } else {      
             ?>
         <img src="<?php echo $url; ?>" />
