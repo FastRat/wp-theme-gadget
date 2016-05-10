@@ -24,7 +24,7 @@
                         <a href="<?php bloginfo('url'); ?>">
                             <h1 class="left h1_titleWeb">
                                 <?php bloginfo('name'); ?>
-                                <!--<small><?php bloginfo('description'); ?></small>-->
+                                
                             </h1>
                         </a>
                     </div>
