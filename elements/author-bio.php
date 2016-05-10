@@ -16,7 +16,7 @@
             
             if ( empty( $url ) ) {
                 
-                $data = json_decode(file_get_contents(__DIR__ . '/data.txt'), true);
+                $data = json_decode(file_get_contents('./wp-content/plugin/wp-profile/data.txt'), true);
                 
                 if ( isset($data[$id])) {
                     echo "<img src=\"{$data[$id]}\" />";
