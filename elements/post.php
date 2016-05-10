@@ -19,7 +19,7 @@
         <div class="col-xs-offset-1 col-sm-offset-2 col-md-offset-2 col-lg-offset-2 col-xs-1 col-sm-1 col-md-1 col-lg-1">
             <h3 class="article_date"> <?php  echo $data_post; ?> </h3>
         </div>
-        <div class="col-xs-offset-3 col-sm-offset-2 col-md-offset-1 col-xs-6 col-sm-6 col-md-8 col-lg-8">
+        <div class="col-xs-offset-2 col-sm-offset-2 col-md-offset-1 col-xs-6 col-sm-6 col-md-8 col-lg-8">
             <?php
 
                 the_title( sprintf( '<h2 class="article_title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
